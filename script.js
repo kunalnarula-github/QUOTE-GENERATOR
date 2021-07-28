@@ -1,5 +1,3 @@
-x.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-
 const quoteContainer = document.getElementById('quote-container')
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
@@ -25,7 +23,7 @@ function complete() {
 let i = 12
 async function getQuote() {
         loading()
-        const apiUrl = 'https://cors-anywhere.herokuapp.com/http://type.fit/api/quotes';
+        const apiUrl = ' https://api.allorigins.win/raw?url=http://type.fit/api/quotes';
         try {
             const response = await fetch(apiUrl);
             const data = await response.json();
