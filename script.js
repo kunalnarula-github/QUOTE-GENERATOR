@@ -23,7 +23,6 @@ function complete() {
 let i = 12
 async function getQuote() {
         loading()
-        const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
         const apiUrl = 'http://type.fit/api/quotes';
         try {
             const response = await fetch(apiUrl);
